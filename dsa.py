@@ -2,13 +2,13 @@ class Stack:
     def __init__(self):
         self.stack = []
 
-    def push(self, item):
-        self.stack.append(item)
-        print(f"{item} pushed into stack.")
+    def push(self, value):
+        self.stack.append(value)
+        print(f"{value} pushed to stack.")
 
     def pop(self):
         if self.is_empty():
-            print("Stack is empty. Cannot pop.")
+            print("Stack is empty.")
         else:
             removed = self.stack.pop()
             print(f"{removed} popped from stack.")
@@ -27,25 +27,7 @@ class Stack:
             print("Stack is empty.")
         else:
             print("Stack elements are:", self.stack)
-<<<<<<< HEAD
-    
-    def peek(self):
-        if self.is_empty():
-            print("Stack is empty.")
-        else:
-            print(f"Top element is: {self.stack[-1]}")
 
-    
-    def is_empty(self):
-        return len(self.stack) == 0
-
-    
-    def display(self):
-        if self.is_empty():
-            print("Stack is empty.")
-        else:
-            print("Stack elements are:", self.stack)
-=======
 
 s = Stack()
 
@@ -78,4 +60,3 @@ while True:
 
     else:
         print("Invalid choice! Please try again.")
->>>>>>> origin/pruthvi
