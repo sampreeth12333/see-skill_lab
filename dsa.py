@@ -14,3 +14,21 @@ class Stack:
         else:
             removed = self.stack.pop()
             print(f"{removed} popped from stack.")
+
+    # Peek top element
+    def peek(self):
+        if self.is_empty():
+            print("Stack is empty.")
+        else:
+            print(f"Top element is: {self.stack[-1]}")
+
+    # Check if stack is empty
+    def is_empty(self):
+        return len(self.stack) == 0
+
+    # Display stack
+    def display(self):
+        if self.is_empty():
+            print("Stack is empty.")
+        else:
+            print("Stack elements are:", self.stack)
