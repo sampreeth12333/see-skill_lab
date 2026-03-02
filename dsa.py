@@ -27,6 +27,23 @@ class Stack:
             print("Stack is empty.")
         else:
             print("Stack elements are:", self.stack)
+    
+    def peek(self):
+        if self.is_empty():
+            print("Stack is empty.")
+        else:
+            print(f"Top element is: {self.stack[-1]}")
+
+    
+    def is_empty(self):
+        return len(self.stack) == 0
+
+    
+    def display(self):
+        if self.is_empty():
+            print("Stack is empty.")
+        else:
+            print("Stack elements are:", self.stack)
 
 s = Stack()
 
